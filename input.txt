@@ -1,0 +1,7 @@
+Assign "arg" (Const (I 10))
+Assign "add" (Add (Const (I 2)) (Const (I 3)))
+Print (Var "add")
+Assign "scratch" (Var "arg")
+Assign "total" (Const (I 1))
+While (Gt (Var "scratch") (Const (I 1))) (Seq (Assign "total" (Mul (Var "total") (Var "scratch"))) (Seq (Assign "scratch" (Sub (Var "scratch") (Const (I 1)))) (Print (Var "scratch"))))
+(Print (Var "total"))

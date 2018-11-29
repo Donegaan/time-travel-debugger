@@ -1,0 +1,7 @@
+flags: {}
+packages:
+- .
+extra-deps:
+- basic-0.1.0.0
+- control-0.1.1.0
+resolver: lts-9.21
